@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Basic Layout */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #444;
+}
+
+#top .container,
+#contact .container {
+    background: rgba(200, 200, 200, .1);
+    color: #666;
+}
+
+.container img{
+    width: 100%;
+    padding: 1em 0;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.7em;
+    padding: .2em 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+.main-nav li {
+    background: #fff;
+    padding: .5em;
+    margin: .5em;
+}
+
+.main-nav li a {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+    text-align: center;
+}
+
+#top .profile-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-info span {
+    font-weight: 400;
+    margin-left: 1em;
+}
+
+.contact-info {
+    padding-bottom: 1em;
+}
+
+.footer-nav {
+    border-top: 1px solid #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.footer-nav .footer-name {
+    float: left;
+}
+
+.footer-nav .footer-top-btn {
+    float: right;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #666;
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Media Querries */
