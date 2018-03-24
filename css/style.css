@@ -1,114 +1,154 @@
+
+/* Google Font */
+
+    @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Sans:400,700');
+
+/*
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Noto Sans', sans-serif;
+*/
+
+/* Color */
+/*
+
+    powderblue: #b0e0e6;
+    snow: #fffafa;
+    gray: #808080;
+    dark gray: #333333;
+
+ */
+
+/* Base Style */
+
 * {
     box-sizing: border-box;
 }
 
-/* Basic Layout */
-
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    color: #444;
-}
-
-#top .container,
-#contact .container {
-    background: rgba(200, 200, 200, .1);
-    color: #666;
-}
-
-.container img{
-    width: 100%;
-    padding: 1em 0;
-}
-
-h1,
-h2,
-h3 {
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 1.7em;
-    padding: .2em 0;
-}
-
-h2 {
-    font-size: 1.2em;
-}
-
-h3 {
-    font-size: 1em;
-}
-
-ul {
-    padding: 0;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-
-.main-nav li {
-    background: #fff;
-    padding: .5em;
-    margin: .5em;
-}
-
-.main-nav li a {
-    font-weight: 700;
-    text-transform: uppercase;
+    background: #b0e0e6;
+    color: #333333;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
 
 .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .2rem;
+}
+
+.main-header strong {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: lowercase;
+}
+
+img {
     width: 100%;
-    margin: 0 auto;
-    padding: 1.5em;
-    text-align: center;
 }
 
-#top .profile-img {
-    width: 80%;
-    margin: 0 auto;
+nav ul {
+    padding-left: 0;
 }
 
-.contact-info span {
-    font-weight: 400;
-    margin-left: 1em;
+nav li {
+    list-style-type: none;
 }
 
-.contact-info {
-    padding-bottom: 1em;
-}
-
-.footer-nav {
-    border-top: 1px solid #ddd;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 2em;
-    text-transform: uppercase;
+a {
+    color: inherit;
     font-weight: 700;
-    font-size: .8em;
-}
-
-.footer-nav .footer-name {
-    float: left;
-}
-
-.footer-nav .footer-top-btn {
-    float: right;
-}
-
-a:link,
-a:visited{
     text-decoration: none;
-    color: #666;
 }
 
 a:hover {
-    color: #666;
+    color: #808080;
+}
+
+/* Header */
+
+.main-header {
+    padding-bottom: 1rem;
+}
+
+.main-nav ul {
+    padding: .5rem 0;
+}
+
+.main-nav li {
+    margin-top: .2rem;
+    padding: .5rem 0;
+    background: #fffafa;
+}
+
+.main-header img {
+    width: 70%;
+    margin: .5rem 0;
+}
+
+/* Main Body */
+
+#portfolio,
+#skills {
+    background: #fffafa;
+    padding: .5rem 0;
+}
+
+#skills .container {
+    border-top: 1px solid #333333;
+}
+
+#portfolio article,
+#skills article {
+    padding-bottom: .3rem;
+}
+
+#contact span {
+    font-weight: 700;
+}
+
+#contact {
+    padding-bottom: 1rem;
+}
+
+#portfolio h2,
+#skills h2,
+#contact h2 {
+    margin:  3rem 0;
+}
+
+/* Footer */
+
+.main-footer {
+    padding: .5rem 0;
+}
+
+.main-footer .container {
+    border-top: 1px solid #333333;
+}
+
+.secondary-nav {
+    display: none;
+}
+
+.footer-logo,
+.to-top-btn {
+    display: block;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: lowercase;
+}
+
+.footer-logo {
+    float: left;
+}
+
+.to-top-btn {
+    float: right;
 }
 
 .clear-fix::after {
@@ -116,4 +156,157 @@ a:hover {
     display: table;
     clear: both;
 }
-/* Media Querries */
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    .main-header .container {
+        width: 100%;
+    }
+
+    .main-nav {
+        margin: 2rem 0;
+    }
+
+    .main-nav li{
+        display: inline-block;
+        background: none;
+        padding: 0 1rem;
+    }
+
+    .main-nav a:hover {
+        color: #333333;
+        border-bottom: 4px solid #333333;
+    }
+
+    .main-header {
+        padding: 2rem 0;
+    }
+
+    .main-header p,
+    .main-header img{
+        display: inline-block;
+        float: right;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-header p {
+        width: 60%;
+        text-align: left;
+        margin-right: -4px;
+    }
+
+    .main-header img {
+        width: 40%;
+    }
+
+    .col {
+        width: 50%;
+        margin-right: -4px;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .col p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #portfolio .container,
+    #skills .container {
+        width: 100%;
+    }
+
+    #skills {
+        margin-top: -1rem;
+    }
+
+    #skills .container {
+        border-top: 1px solid #333333;
+    }
+
+    #contact .container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .to-top-btn {
+        display: none;
+    }
+
+    .secondary-nav {
+        display: inline-block;
+        float: right;
+    }
+
+    .secondary-nav li {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .secondary-nav a:hover {
+        color: #333333;
+        border-bottom: 4px solid #333333;
+    }
+
+    .clear-fix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 80%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .main-header h1,
+    .main-header nav {
+        display: inline-block;
+    }
+
+    .main-header h1 {
+        float: left;
+        margin: 0;
+    }
+
+    .main-header nav {
+        float:right;
+        margin: 0;
+    }
+
+    .col {
+        width: 33.33%;
+    }
+
+    #portfolio,
+    #skills,
+    #contact {
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    #skills .col {
+        width: 50%;
+    }
+
+    #contact .container {
+        width: 50%;
+    }
+
+    .clear-fix {
+        padding-bottom: 2rem;
+    }
+
+}
