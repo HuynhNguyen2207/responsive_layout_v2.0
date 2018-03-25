@@ -99,9 +99,9 @@ a:hover {
     padding: .5rem 0;
 }
 
-#skills .container {
+/* #skills .container {
     border-top: 1px solid #333333;
-}
+} */
 
 #portfolio article,
 #skills article {
@@ -226,9 +226,9 @@ a:hover {
         margin-top: -1rem;
     }
 
-    #skills .container {
+    /* #skills .container {
         border-top: 1px solid #333333;
-    }
+    } */
 
     #contact .container {
         width: 50%;
